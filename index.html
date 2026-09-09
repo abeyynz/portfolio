@@ -51,39 +51,564 @@
       </div>
       <div class="slider-controls"><button id="exp-prev" aria-label="Pengalaman sebelumnya">←</button><button
           id="exp-next" aria-label="Pengalaman berikutnya">→</button></div>
+      <style>
+        #experience-track article {
+          transition: transform .2s ease, box-shadow .2s ease, background .2s ease, border-color .2s ease;
+        }
+
+        #experience-track article:hover {
+          transform: translateY(-6px);
+          background: #f8faff;
+          box-shadow: 0 16px 34px rgba(47, 90, 243, .12);
+          border-color: #b9c8ff;
+        }
+
+        #experience-track article:hover h3 {
+          color: var(--blue);
+        }
+      </style>
+
       <div class="experience-track" id="experience-track">
-        <article><b>Jun 2024 — Sekarang</b>
+
+        <article>
+          <b>Jun 2024 — Sekarang</b>
           <h3>Instruktur Robotik</h3>
           <h4>MyRobo School of Robotics Cianjur</h4>
-          <p>Mengajar robotika berbasis praktik, menyusun RPP dan materi, mengelola jadwal, serta mendampingi proyek
-            siswa.</p>
+          <p>
+            Mengajar robotika berbasis praktik, menyusun RPP dan materi,
+            mengelola jadwal, serta mendampingi proyek siswa.
+          </p>
         </article>
-        <article><b>Jul 2025 — Jul 2026</b>
+
+        <article>
+          <b>Jul 2025 — Jul 2026</b>
           <h3>Sekretaris Laboratorium Informatika</h3>
           <h4>Universitas Suryakancana</h4>
-          <p>Mengelola persuratan, dokumen pengajuan, notulensi, jadwal, dan persiapan administrasi praktikum.</p>
+          <p>
+            Mengelola persuratan, dokumen pengajuan, notulensi, jadwal,
+            dan persiapan administrasi praktikum.
+          </p>
         </article>
-        <article><b>Jul 2024 — Jul 2026</b>
+
+        <article>
+          <b>Jul 2024 — Jul 2026</b>
           <h3>Asisten Laboratorium Informatika</h3>
           <h4>Universitas Suryakancana</h4>
-          <p>Mendampingi praktikum pemrograman, basis data, web, mobile, analisis sistem, dan machine learning.</p>
+          <p>
+            Mendampingi praktikum pemrograman, basis data, web, mobile,
+            analisis sistem, dan machine learning.
+          </p>
         </article>
-        <article><b>Sep 2025 — Des 2025</b>
+
+        <article>
+          <b>Sep 2025 — Des 2025</b>
           <h3>Private Coding Tutor</h3>
           <h4>MyRobo School of Robotics Bandung</h4>
-          <p>Mengajar Python dan dasar pengembangan web melalui sesi privat berbasis proyek.</p>
+          <p>
+            Mengajar Python dan dasar pengembangan web melalui sesi privat
+            berbasis proyek.
+          </p>
         </article>
-        <article><b>Mar 2026 — Mei 2026</b>
+
+        <article>
+          <b>Mar 2026 — Mei 2026</b>
           <h3>System Analyst &amp; Web Developer</h3>
           <h4>PT Fathia Fillah Abadi</h4>
-          <p>Menganalisis proses bisnis dan membangun sistem pemesanan serta pengelolaan jamaah secara end-to-end.</p>
+          <p>
+            Menganalisis proses bisnis dan membangun sistem pemesanan serta
+            pengelolaan jamaah secara end-to-end.
+          </p>
         </article>
-        <article><b>Sep 2024 — Des 2024</b>
+
+        <article>
+          <b>Sep 2024 — Des 2024</b>
           <h3>Cloud Computing Cohort</h3>
           <h4>Bangkit Academy</h4>
-          <p>Menuntaskan 906 jam pembelajaran serta mengembangkan backend dan arsitektur cloud untuk capstone.</p>
+          <p>
+            Menuntaskan 906 jam pembelajaran serta mengembangkan backend
+            dan arsitektur cloud untuk capstone.
+          </p>
         </article>
+
       </div>
+    </section>
+    <style>
+      #achievements .achievement-featured,
+      #achievements .achievement-main,
+      #achievements .achievement-small,
+      #achievements .achievement-publication {
+        transition:
+          transform .25s ease,
+          box-shadow .25s ease,
+          border-color .25s ease;
+      }
+
+      #achievements .achievement-featured:hover,
+      #achievements .achievement-main:hover,
+      #achievements .achievement-small:hover {
+        transform: translateY(-6px);
+        border-color: #b8c9ff !important;
+        box-shadow: 0 22px 50px rgba(17, 36, 75, .13) !important;
+      }
+
+      #achievements .achievement-image img {
+        transition: transform .35s ease;
+      }
+
+      #achievements .achievement-featured:hover .achievement-image img,
+      #achievements .achievement-main:hover .achievement-image img {
+        transform: scale(1.035);
+      }
+
+      #achievements .achievement-publication:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 22px 50px rgba(7, 31, 75, .28) !important;
+      }
+
+      #achievements .achievement-publication strong {
+        display: inline-block;
+        transition: transform .2s ease;
+      }
+
+      #achievements .achievement-publication:hover strong {
+        transform: translateX(5px);
+      }
+    </style>
+
+
+    <section class="achievements section" id="achievements" style="
+    background:#f3f7fc;
+    padding-top:70px;
+    padding-bottom:80px;
+  ">
+
+      <div style="
+      display:flex;
+      align-items:flex-end;
+      justify-content:space-between;
+      gap:30px;
+      margin-bottom:32px;
+    ">
+
+        <div>
+
+          <p class="eyebrow" style="margin-bottom:12px;">
+            11 / ACHIEVEMENTS
+          </p>
+
+          <h2 style="
+          margin:0;
+          max-width:700px;
+          color:var(--navy);
+          font-size:clamp(2.5rem,4vw,4.5rem);
+          line-height:.95;
+          letter-spacing:-.055em;
+        ">
+            Pencapaian yang
+            <span style="color:var(--blue);">
+              berarti.
+            </span>
+          </h2>
+
+        </div>
+
+
+        <span style="
+        color:var(--muted);
+        font-size:.82rem;
+        font-weight:700;
+        white-space:nowrap;
+      ">
+          3 pencapaian · 1 publikasi
+        </span>
+
+      </div>
+
+      <div style="
+      display:grid;
+      grid-template-columns:1.15fr .85fr;
+      gap:22px;
+    ">
+
+        <article class="achievement-featured" style="
+        min-height:560px;
+        display:grid;
+        grid-template-rows:330px 1fr;
+        overflow:hidden;
+        background:#fff;
+        border:1px solid var(--line);
+        border-radius:28px;
+        box-shadow:0 18px 50px rgba(17,36,75,.08);
+      ">
+
+          <button class="achievement-image" data-single="assets/lida.png" style="
+          padding:0;
+          border:0;
+          cursor:pointer;
+          background:#e9effa;
+          overflow:hidden;
+        ">
+
+            <img src="assets/lida.png" alt="Sertifikat Lomba Inovasi Daerah" style="
+            display:block;
+            width:100%;
+            height:100%;
+            object-fit:contain;
+          ">
+
+          </button>
+
+
+          <div style="
+          padding:30px 34px 32px;
+          display:flex;
+          flex-direction:column;
+        ">
+
+            <div style="
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            gap:20px;
+          ">
+
+              <b style="
+              color:var(--blue);
+              font-size:.72rem;
+              letter-spacing:.1em;
+            ">
+                01 / FEATURED ACHIEVEMENT
+              </b>
+
+
+              <span style="
+              padding:7px 11px;
+              border-radius:999px;
+              background:#eaf0ff;
+              color:var(--blue);
+              font-size:.68rem;
+              font-weight:800;
+            ">
+                2025
+              </span>
+
+            </div>
+
+
+            <h3 style="
+            margin:18px 0 12px;
+            color:var(--navy);
+            font-size:1.65rem;
+            line-height:1.25;
+          ">
+              Juara 1 Lomba Inovasi Daerah Kabupaten Cianjur
+            </h3>
+
+
+            <p style="
+            margin:0;
+            color:var(--muted);
+            font-size:.88rem;
+            line-height:1.7;
+          ">
+              Meraih Juara 1 kategori Pelajar/Mahasiswa melalui gagasan
+              inovasi digital yang dikembangkan untuk mendukung kebutuhan
+              dan pemberdayaan masyarakat di Kabupaten Cianjur.
+            </p>
+
+
+            <div style="
+            display:flex;
+            flex-wrap:wrap;
+            gap:8px;
+            margin-top:auto;
+            padding-top:22px;
+          ">
+
+              <span style="
+              padding:7px 11px;
+              border-radius:999px;
+              background:#f3f7fc;
+              color:var(--navy);
+              font-size:.7rem;
+              font-weight:700;
+            ">
+                Innovation
+              </span>
+
+
+              <span style="
+              padding:7px 11px;
+              border-radius:999px;
+              background:#f3f7fc;
+              color:var(--navy);
+              font-size:.7rem;
+              font-weight:700;
+            ">
+                Regional Competition
+              </span>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+
+        <div style="
+        display:grid;
+        grid-template-rows:auto auto auto;
+        gap:22px;
+      ">
+
+
+          <article class="achievement-main" style="
+          display:grid;
+          grid-template-columns:44% 56%;
+          min-height:270px;
+          overflow:hidden;
+          background:#fff;
+          border:1px solid var(--line);
+          border-radius:25px;
+          box-shadow:0 14px 40px rgba(17,36,75,.07);
+        ">
+
+
+            <button class="achievement-image" data-single="assets/pilmapres.jpeg" style="
+            padding:0;
+            border:0;
+            cursor:pointer;
+            background:#e9effa;
+            overflow:hidden;
+          ">
+
+              <img src="assets/pilmapres.jpeg" alt="Sertifikat Mahasiswa Berprestasi" style="
+              display:block;
+              width:100%;
+              height:100%;
+              object-fit:contain;
+            ">
+
+            </button>
+
+
+            <div style="
+            padding:27px 28px;
+            display:flex;
+            flex-direction:column;
+          ">
+
+              <b style="
+              color:var(--blue);
+              font-size:.7rem;
+              letter-spacing:.1em;
+            ">
+                02 / ACHIEVEMENT
+              </b>
+
+
+              <h3 style="
+              margin:14px 0 10px;
+              color:var(--navy);
+              font-size:1.25rem;
+              line-height:1.35;
+            ">
+                Juara 2 Mahasiswa Berprestasi Universitas Suryakancana
+              </h3>
+
+
+              <p style="
+              margin:0;
+              color:var(--muted);
+              font-size:.82rem;
+              line-height:1.65;
+            ">
+                Meraih peringkat kedua dalam seleksi Mahasiswa
+                Berprestasi tingkat Universitas Suryakancana
+                tahun 2025.
+              </p>
+
+
+              <span style="
+              margin-top:auto;
+              padding-top:16px;
+              color:var(--blue);
+              font-size:.7rem;
+              font-weight:800;
+            ">
+                2025
+              </span>
+
+            </div>
+
+          </article>
+
+          <article class="achievement-small" style="
+          position:relative;
+          overflow:hidden;
+          padding:27px 30px;
+          background:#fff;
+          border:1px solid var(--line);
+          border-radius:24px;
+          box-shadow:0 12px 36px rgba(17,36,75,.06);
+        ">
+
+            <div style="
+            position:absolute;
+            top:0;
+            left:0;
+            width:5px;
+            height:100%;
+            background:var(--blue);
+          "></div>
+
+
+            <div style="
+            display:flex;
+            justify-content:space-between;
+            gap:20px;
+            align-items:start;
+          ">
+
+
+              <div>
+
+                <b style="
+                color:var(--blue);
+                font-size:.7rem;
+                letter-spacing:.1em;
+              ">
+                  03 / ACHIEVEMENT
+                </b>
+
+
+                <h3 style="
+                margin:13px 0 7px;
+                color:var(--navy);
+                font-size:1.15rem;
+                line-height:1.4;
+              ">
+                  Juara 1 Mahasiswa Berprestasi Fakultas Teknik
+                </h3>
+
+
+                <p style="
+                margin:0;
+                color:var(--muted);
+                font-size:.8rem;
+                line-height:1.6;
+              ">
+                  Meraih peringkat pertama dalam seleksi Mahasiswa
+                  Berprestasi tingkat Fakultas Teknik Universitas
+                  Suryakancana tahun 2025.
+                </p>
+
+              </div>
+
+
+              <span style="
+              color:#c7d4f3;
+              font-size:3rem;
+              font-weight:800;
+              line-height:1;
+            ">
+                01
+              </span>
+
+            </div>
+
+          </article>
+
+          <a class="achievement-publication" href="https://doi.org/10.35194/mji.v17i2.5893" target="_blank"
+            rel="noreferrer" style="
+          position:relative;
+          overflow:hidden;
+          min-height:190px;
+          padding:28px 30px;
+          display:flex;
+          flex-direction:column;
+          justify-content:center;
+          background:var(--navy);
+          border-radius:24px;
+          box-shadow:0 14px 40px rgba(7,31,75,.18);
+          text-decoration:none;
+        ">
+
+
+            <!-- DECORATION -->
+
+            <div style="
+            position:absolute;
+            width:150px;
+            height:150px;
+            right:-40px;
+            top:-60px;
+            border-radius:50%;
+            background:rgba(255,255,255,.06);
+            pointer-events:none;
+          "></div>
+
+
+            <b style="
+            position:relative;
+            color:#9fb8ff;
+            font-size:.7rem;
+            letter-spacing:.1em;
+          ">
+              04 / PUBLICATION
+            </b>
+
+
+            <h3 style="
+            position:relative;
+            margin:13px 0 8px;
+            max-width:90%;
+            color:#fff;
+            font-size:1rem;
+            line-height:1.45;
+          ">
+              Implementation of Smoothing and Noise Reduction for
+              Digital Image Quality Enhancement Using Neighborhood
+              Operations
+            </h3>
+
+
+            <div style="
+            position:relative;
+            margin-top:auto;
+            padding-top:15px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            gap:20px;
+          ">
+
+              <span style="
+              color:#cbd7f1;
+              font-size:.76rem;
+            ">
+                Media Jurnal Informatika · 2025
+              </span>
+
+
+              <strong style="
+              color:#fff;
+              font-size:.76rem;
+              white-space:nowrap;
+            ">
+                View publication ↗
+              </strong>
+
+            </div>
+
+          </a>
+
+
+        </div>
+
+      </div>
+
     </section>
 
     <div id="projects">
@@ -107,7 +632,8 @@
                 <dt>Stack</dt>
                 <dd>Laravel · MySQL · Tailwind CSS</dd>
               </div>
-            </dl><a class="github-link placeholder-link" href="#">GitHub proyek ↗</a>
+            </dl><a class="github-link" href="https://github.com/abeyynz/f2travel.git" target="_blank"
+              rel="noreferrer">GitHub proyek ↗</a>
           </div>
           <div class="gallery three"><button class="gallery-card"
               data-gallery="assets/bpmn-01.png,assets/bpmn-02.png,assets/usecase.png,assets/AD-01.png,assets/AD-02.png,assets/AD-03.png,assets/SD-01.png,assets/SD-02.png,assets/SD-03.png,assets/Class-travel.png,assets/erd-travel.png,assets/dd-travel.png"><img
@@ -143,7 +669,10 @@
                 <dt>Stack</dt>
                 <dd>Laravel · MySQL · Python · Flask</dd>
               </div>
-            </dl><a class="github-link placeholder-link" href="#">GitHub proyek ↗</a>
+            </dl><a class="github-link" href="https://github.com/abeyynz/model_chatbot.git" target="_blank"
+              rel="noreferrer">GitHub Model ↗</a>
+            <a class="github-link" href="https://github.com/abeyynz/chatbot_perwalian.git" target="_blank"
+              rel="noreferrer">GitHub Chatbot ↗</a>
           </div>
           <div class="gallery four"><button class="gallery-card"
               data-gallery="assets/cb-ad.jpg,assets/cb-ad1.jpg,assets/cb-sd.jpg,assets/cb-sd2.jpg,assets/cb-cls.jpg,assets/cb-dd.jpg,assets/cb-erd.jpg"><img
@@ -180,7 +709,8 @@
                 <dt>Stack</dt>
                 <dd>Express.js · Cloud Run · Cloud SQL · Swagger</dd>
               </div>
-            </dl><a class="github-link placeholder-link" href="#">GitHub proyek ↗</a>
+            </dl><a class="github-link" href="https://github.com/abeyynz/budgy-money-tracker.git" target="_blank"
+              rel="noreferrer">GitHub proyek ↗</a>
           </div>
           <div class="gallery four static-gallery"><button class="gallery-card" data-single="assets/arsitektur.png"><img
                 src="assets/arsitektur.png" alt="Arsitektur Budgy"><span>Arsitektur Cloud</span></button><button
@@ -250,7 +780,8 @@
                 <dt>Stack</dt>
                 <dd>Laravel · MySQL · Xendit · QR Code · Webhook · PDF</dd>
               </div>
-            </dl><a class="github-link placeholder-link" href="#">GitHub proyek ↗</a>
+            </dl><a class="github-link" href="https://github.com/abeyynz/infosilfest.git" target="_blank"
+              rel="noreferrer">GitHub proyek ↗</a>
           </div>
           <div class="gallery six"><button class="gallery-card" data-single="assets/infosil2.png"><img
                 src="assets/infosil2.png" alt="Login infosil"><span>Detail Order</span></button><button
@@ -267,40 +798,930 @@
       </section>
     </div>
 
-    <section class="other-projects section" id="other-projects">
-      <p class="eyebrow">08 / OTHER PROJECTS</p>
-      <div class="compact-grid">
-        <button class="mini-project" data-modal-title="Kebun Raya Cibodas"
-          data-modal-text="Aplikasi mobile berbasis Flutter untuk menyajikan informasi kawasan dan koleksi Kebun Raya Cibodas."
-          data-modal-stack="Flutter · Mobile Application" data-modal-image="assets/cibodas2.png"><img
-            src="assets/cibodas2.png" alt="Kebun Raya Cibodas"><span><b>01 / MOBILE APPLICATION</b><strong>Kebun
-              Raya Cibodas</strong><small>Lihat detail ↗</small></span></button>
-        <button class="mini-project" data-modal-title="CIRCUIT Competition"
-          data-modal-text="Aplikasi pendukung perlombaan robotik untuk informasi peserta, kategori, jadwal, dan pelaksanaan kompetisi."
-          data-modal-stack="Event Application" data-modal-image="assets/circuit.png"><img src="assets/circuit.png"
-            alt="CIRCUIT Competition"><span><b>02 / EVENT APPLICATION</b><strong>CIRCUIT
-              Competition</strong><small>Lihat detail ↗</small></span></button>
-        <button class="mini-project" data-modal-title="LAHAP"
-          data-modal-text="Aplikasi web resep dan informasi makanan yang dikembangkan sebagai proyek pembelajaran pengembangan web."
-          data-modal-stack="Web Application" data-modal-image="assets/lahap1.png"><img src="assets/lahap1.png"
-            alt="LAHAP"><span><b>03 / WEB
-              APPLICATION</b><strong>LAHAP</strong><small>Lihat detail ↗</small></span></button>
-        <button class="mini-project" data-modal-title="Sistem POS"
-          data-modal-text="Proyek basis data untuk mengelola buku, anggota, peminjaman, dan pengembalian."
-          data-modal-stack="Database Project" data-modal-image="assets/pos1.png"><img src="assets/pos1.png"
-            alt="Sistem POS"><span><b>04 / DATABASE PROJECT</b><strong>Sistem
-              Perpustakaan</strong><small>Lihat detail ↗</small></span></button>
-        <button class="mini-project" data-modal-title="Server Infrastructure Lab"
-          data-modal-text="Simulasi infrastruktur jaringan dan layanan server pada lingkungan laboratorium."
-          data-modal-stack="GNS3 · Zentyal · Network Simulation" data-modal-image="assets/zenty.png"><img
-            src="assets/zenty.png" alt="Server Infrastructure Lab"><span><b>05 / NETWORK
-              SIMULATION</b><strong>Server Infrastructure Lab</strong><small>Lihat detail ↗</small></span></button>
-        <button class="mini-project" data-modal-title="Tabungan SMK"
-          data-modal-text="Aplikasi desktop sederhana untuk pencatatan transaksi dan saldo tabungan siswa."
-          data-modal-stack="Desktop Application" data-modal-image="assets/ds.png"><img src="assets/ds.png"
-            alt="Tabungan SMK"><span><b>06 / DESKTOP APPLICATION</b><strong>Tabungan
-              SMK</strong><small>Lihat detail ↗</small></span></button>
+    <style>
+      #other-projects .other-project-card {
+        transition:
+          transform .25s ease,
+          box-shadow .25s ease,
+          border-color .25s ease;
+      }
+
+      #other-projects .other-project-card:hover {
+        transform: translateY(-6px);
+        border-color: #b8c9ff !important;
+        box-shadow: 0 20px 45px rgba(20, 40, 80, .13) !important;
+      }
+
+      #other-projects .other-project-image img {
+        transition: transform .35s ease;
+      }
+
+      #other-projects .other-project-card:hover .other-project-image img {
+        transform: scale(1.04);
+      }
+
+      #other-projects .other-project-title {
+        transition: color .2s ease;
+      }
+
+      #other-projects .other-project-card:hover .other-project-title {
+        color: var(--blue) !important;
+      }
+
+      #other-projects .other-project-tag {
+        transition:
+          background .2s ease,
+          transform .2s ease;
+      }
+
+      #other-projects .other-project-card:hover .other-project-tag {
+        background: #dfe8ff !important;
+      }
+
+      #other-projects .other-project-link {
+        display: inline-block;
+        transition: transform .2s ease;
+      }
+
+      #other-projects .other-project-card:hover .other-project-link {
+        transform: translateX(5px);
+      }
+    </style>
+
+
+    <section class="other-projects section" id="other-projects" style="
+    background:#fff;
+    padding-top:60px;
+    padding-bottom:70px;
+  ">
+
+      <p class="eyebrow" style="margin-bottom:30px;">
+        08 / OTHER PROJECTS
+      </p>
+
+
+      <div style="
+      display:grid;
+      grid-template-columns:repeat(2, minmax(0, 1fr));
+      gap:22px;
+    ">
+
+        <a class="other-project-card" href="https://github.com/abeyynz/cibodas_app" target="_blank"
+          rel="noopener noreferrer" style="
+        display:grid;
+        grid-template-columns:38% 62%;
+        height:280px;
+        overflow:hidden;
+        background:#fff;
+        border:1px solid var(--line);
+        border-radius:22px;
+        box-shadow:0 12px 34px rgba(20,40,80,.06);
+        text-decoration:none;
+      ">
+
+          <div class="other-project-image" style="
+          width:100%;
+          height:280px;
+          display:flex;
+          align-items:center;
+          justify-content:center;
+          overflow:hidden;
+          background:#f4f7fc;
+        ">
+
+            <img src="assets/cibodas2.png" alt="Kebun Raya Cibodas" style="
+            display:block;
+            width:100%;
+            height:100%;
+            object-fit:contain;
+          ">
+
+          </div>
+
+
+          <div style="
+          padding:26px 30px;
+          display:flex;
+          flex-direction:column;
+          min-width:0;
+          overflow:hidden;
+        ">
+
+            <b style="
+            color:var(--blue);
+            font-size:.68rem;
+            letter-spacing:.1em;
+          ">
+              01 / MOBILE APPLICATION
+            </b>
+
+
+            <h3 class="other-project-title" style="
+            margin:10px 0 12px;
+            color:var(--navy);
+            font-size:1.35rem;
+          ">
+              Kebun Raya Cibodas
+            </h3>
+
+
+            <p style="
+            margin:0;
+            color:var(--muted);
+            font-size:.82rem;
+            line-height:1.65;
+          ">
+              Mengembangkan aplikasi mobile untuk menyajikan informasi
+              kawasan dan koleksi Kebun Raya Cibodas. Mengerjakan
+              antarmuka aplikasi, navigasi antarhalaman, serta penyajian
+              informasi destinasi dan koleksi.
+            </p>
+
+
+            <div style="
+            display:flex;
+            flex-wrap:wrap;
+            gap:7px;
+            margin-top:14px;
+          ">
+
+              <span class="other-project-tag" style="
+              padding:6px 10px;
+              border-radius:999px;
+              background:#eaf0ff;
+              color:var(--blue);
+              font-size:.68rem;
+              font-weight:800;
+            ">
+                Flutter
+              </span>
+
+
+              <span class="other-project-tag" style="
+              padding:6px 10px;
+              border-radius:999px;
+              background:#eaf0ff;
+              color:var(--blue);
+              font-size:.68rem;
+              font-weight:800;
+            ">
+                Mobile
+              </span>
+
+            </div>
+
+
+            <small class="other-project-link" style="
+            margin-top:auto;
+            padding-top:12px;
+            color:var(--blue);
+            font-weight:800;
+            font-size:.75rem;
+          ">
+              View on GitHub ↗
+            </small>
+
+          </div>
+
+        </a>
+
+        <a class="other-project-card" href="https://github.com/abeyynz/circuit" target="_blank"
+          rel="noopener noreferrer" style="
+        display:grid;
+        grid-template-columns:38% 62%;
+        height:280px;
+        overflow:hidden;
+        background:#fff;
+        border:1px solid var(--line);
+        border-radius:22px;
+        box-shadow:0 12px 34px rgba(20,40,80,.06);
+        text-decoration:none;
+      ">
+
+          <div class="other-project-image" style="
+          width:100%;
+          height:280px;
+          display:flex;
+          align-items:center;
+          justify-content:center;
+          overflow:hidden;
+          background:#f4f7fc;
+        ">
+
+            <img src="assets/circuit.png" alt="CIRCUIT Competition" style="
+            display:block;
+            width:100%;
+            height:100%;
+            object-fit:contain;
+          ">
+
+          </div>
+
+
+          <div style="
+          padding:26px 30px;
+          display:flex;
+          flex-direction:column;
+          min-width:0;
+          overflow:hidden;
+        ">
+
+            <b style="
+            color:var(--blue);
+            font-size:.68rem;
+            letter-spacing:.1em;
+          ">
+              02 / EVENT APPLICATION
+            </b>
+
+
+            <h3 class="other-project-title" style="
+            margin:10px 0 12px;
+            color:var(--navy);
+            font-size:1.35rem;
+          ">
+              CIRCUIT Competition
+            </h3>
+
+
+            <p style="
+            margin:0;
+            color:var(--muted);
+            font-size:.82rem;
+            line-height:1.65;
+          ">
+              Mengembangkan aplikasi pendukung kompetisi robotik CIRCUIT
+              untuk membantu operasional perlombaan, mulai dari pengelolaan
+              peserta dan kategori hingga pencatatan hasil serta penyajian
+              leaderboard kompetisi.
+            </p>
+
+
+            <div style="
+            display:flex;
+            flex-wrap:wrap;
+            gap:7px;
+            margin-top:14px;
+          ">
+
+              <span class="other-project-tag" style="
+              padding:6px 10px;
+              border-radius:999px;
+              background:#eaf0ff;
+              color:var(--blue);
+              font-size:.68rem;
+              font-weight:800;
+            ">
+                Web Application
+              </span>
+
+
+              <span class="other-project-tag" style="
+              padding:6px 10px;
+              border-radius:999px;
+              background:#eaf0ff;
+              color:var(--blue);
+              font-size:.68rem;
+              font-weight:800;
+            ">
+                Competition System
+              </span>
+
+            </div>
+
+
+            <small class="other-project-link" style="
+            margin-top:auto;
+            padding-top:12px;
+            color:var(--blue);
+            font-weight:800;
+            font-size:.75rem;
+          ">
+              View on GitHub ↗
+            </small>
+
+          </div>
+
+        </a>
+
+        <a class="other-project-card" href="https://github.com/abeyynz/food-website" target="_blank"
+          rel="noopener noreferrer" style="
+        display:grid;
+        grid-template-columns:38% 62%;
+        height:280px;
+        overflow:hidden;
+        background:#fff;
+        border:1px solid var(--line);
+        border-radius:22px;
+        box-shadow:0 12px 34px rgba(20,40,80,.06);
+        text-decoration:none;
+      ">
+
+          <div class="other-project-image" style="
+          width:100%;
+          height:280px;
+          display:flex;
+          align-items:center;
+          justify-content:center;
+          overflow:hidden;
+          background:#f4f7fc;
+        ">
+
+            <img src="assets/lahap1.png" alt="LAHAP" style="
+            display:block;
+            width:100%;
+            height:100%;
+            object-fit:contain;
+          ">
+
+          </div>
+
+
+          <div style="
+          padding:26px 30px;
+          display:flex;
+          flex-direction:column;
+          min-width:0;
+          overflow:hidden;
+        ">
+
+            <b style="
+            color:var(--blue);
+            font-size:.68rem;
+            letter-spacing:.1em;
+          ">
+              03 / WEB APPLICATION
+            </b>
+
+
+            <h3 class="other-project-title" style="
+            margin:10px 0 12px;
+            color:var(--navy);
+            font-size:1.35rem;
+          ">
+              LAHAP
+            </h3>
+
+
+            <p style="
+            margin:0;
+            color:var(--muted);
+            font-size:.82rem;
+            line-height:1.65;
+          ">
+              Mengembangkan website resep dan informasi makanan sebagai
+              proyek pembelajaran web development. Mengerjakan struktur
+              halaman, tampilan antarmuka, navigasi, serta penyajian
+              informasi dan detail resep makanan.
+            </p>
+
+
+            <div style="
+            display:flex;
+            flex-wrap:wrap;
+            gap:7px;
+            margin-top:14px;
+          ">
+
+              <span class="other-project-tag" style="
+              padding:6px 10px;
+              border-radius:999px;
+              background:#eaf0ff;
+              color:var(--blue);
+              font-size:.68rem;
+              font-weight:800;
+            ">
+                Web
+              </span>
+
+
+              <span class="other-project-tag" style="
+              padding:6px 10px;
+              border-radius:999px;
+              background:#eaf0ff;
+              color:var(--blue);
+              font-size:.68rem;
+              font-weight:800;
+            ">
+                Native
+              </span>
+
+            </div>
+
+
+            <small class="other-project-link" style="
+            margin-top:auto;
+            padding-top:12px;
+            color:var(--blue);
+            font-weight:800;
+            font-size:.75rem;
+          ">
+              View on GitHub ↗
+            </small>
+
+          </div>
+
+        </a>
+
+
+        <a class="other-project-card" href="https://github.com/abeyynz/minimarket" target="_blank"
+          rel="noopener noreferrer" style="
+        display:grid;
+        grid-template-columns:38% 62%;
+        height:280px;
+        overflow:hidden;
+        background:#fff;
+        border:1px solid var(--line);
+        border-radius:22px;
+        box-shadow:0 12px 34px rgba(20,40,80,.06);
+        text-decoration:none;
+      ">
+
+          <div class="other-project-image" style="
+          width:100%;
+          height:280px;
+          display:flex;
+          align-items:center;
+          justify-content:center;
+          overflow:hidden;
+          background:#f4f7fc;
+        ">
+
+            <img src="assets/pos1.png" alt="Sistem POS" style="
+            display:block;
+            width:100%;
+            height:100%;
+            object-fit:contain;
+          ">
+
+          </div>
+
+
+          <div style="
+          padding:26px 30px;
+          display:flex;
+          flex-direction:column;
+          min-width:0;
+          overflow:hidden;
+        ">
+
+            <b style="
+            color:var(--blue);
+            font-size:.68rem;
+            letter-spacing:.1em;
+          ">
+              04 / WEB PROJECT
+            </b>
+
+
+            <h3 class="other-project-title" style="
+            margin:10px 0 12px;
+            color:var(--navy);
+            font-size:1.35rem;
+          ">
+              Sistem POS
+            </h3>
+
+
+            <p style="
+            margin:0;
+            color:var(--muted);
+            font-size:.82rem;
+            line-height:1.65;
+          ">
+              Mengembangkan sistem Point of Sale dan manajemen cabang
+              minimarket. Sistem mencakup pengelolaan produk dan stok,
+              transaksi penjualan, data cabang, akun karyawan, serta
+              kebutuhan operasional toko.
+            </p>
+
+
+            <div style="
+            display:flex;
+            flex-wrap:wrap;
+            gap:7px;
+            margin-top:14px;
+          ">
+
+              <span class="other-project-tag" style="
+              padding:6px 10px;
+              border-radius:999px;
+              background:#eaf0ff;
+              color:var(--blue);
+              font-size:.68rem;
+              font-weight:800;
+            ">
+                Laravel
+              </span>
+
+
+              <span class="other-project-tag" style="
+              padding:6px 10px;
+              border-radius:999px;
+              background:#eaf0ff;
+              color:var(--blue);
+              font-size:.68rem;
+              font-weight:800;
+            ">
+                MySQL
+              </span>
+
+
+              <span class="other-project-tag" style="
+              padding:6px 10px;
+              border-radius:999px;
+              background:#eaf0ff;
+              color:var(--blue);
+              font-size:.68rem;
+              font-weight:800;
+            ">
+                POS
+              </span>
+
+            </div>
+
+
+            <small class="other-project-link" style="
+            margin-top:auto;
+            padding-top:12px;
+            color:var(--blue);
+            font-weight:800;
+            font-size:.75rem;
+          ">
+              View on GitHub ↗
+            </small>
+
+          </div>
+
+        </a>
+
+        <article class="other-project-card" style="
+        display:grid;
+        grid-template-columns:38% 62%;
+        height:280px;
+        overflow:hidden;
+        background:#fff;
+        border:1px solid var(--line);
+        border-radius:22px;
+        box-shadow:0 12px 34px rgba(20,40,80,.06);
+      ">
+
+          <div class="other-project-image" style="
+          width:100%;
+          height:280px;
+          display:flex;
+          align-items:center;
+          justify-content:center;
+          overflow:hidden;
+          background:#f4f7fc;
+        ">
+
+            <img src="assets/zenty.png" alt="Server Infrastructure Lab" style="
+            display:block;
+            width:100%;
+            height:100%;
+            object-fit:contain;
+          ">
+
+          </div>
+
+
+          <div style="
+          padding:26px 30px;
+          display:flex;
+          flex-direction:column;
+          min-width:0;
+          overflow:hidden;
+        ">
+
+            <b style="
+            color:var(--blue);
+            font-size:.68rem;
+            letter-spacing:.1em;
+          ">
+              05 / NETWORK SIMULATION
+            </b>
+
+
+            <h3 class="other-project-title" style="
+            margin:10px 0 12px;
+            color:var(--navy);
+            font-size:1.35rem;
+          ">
+              Server Infrastructure Lab
+            </h3>
+
+
+            <p style="
+            margin:0;
+            color:var(--muted);
+            font-size:.82rem;
+            line-height:1.65;
+          ">
+              Membangun simulasi infrastruktur jaringan dan melakukan
+              konfigurasi beberapa layanan server dalam lingkungan
+              laboratorium, termasuk web server, database, FTP, DNS,
+              mail server, serta konfigurasi jaringan pendukung.
+            </p>
+
+
+            <div style="
+            display:flex;
+            flex-wrap:wrap;
+            gap:7px;
+            margin-top:14px;
+          ">
+
+              <span class="other-project-tag" style="
+              padding:6px 10px;
+              border-radius:999px;
+              background:#eaf0ff;
+              color:var(--blue);
+              font-size:.68rem;
+              font-weight:800;
+            ">
+                GNS3
+              </span>
+
+
+              <span class="other-project-tag" style="
+              padding:6px 10px;
+              border-radius:999px;
+              background:#eaf0ff;
+              color:var(--blue);
+              font-size:.68rem;
+              font-weight:800;
+            ">
+                Zentyal
+              </span>
+
+
+              <span class="other-project-tag" style="
+              padding:6px 10px;
+              border-radius:999px;
+              background:#eaf0ff;
+              color:var(--blue);
+              font-size:.68rem;
+              font-weight:800;
+            ">
+                Networking
+              </span>
+
+
+              <span class="other-project-tag" style="
+              padding:6px 10px;
+              border-radius:999px;
+              background:#eaf0ff;
+              color:var(--blue);
+              font-size:.68rem;
+              font-weight:800;
+            ">
+                Server
+              </span>
+
+            </div>
+
+
+            <small style="
+            margin-top:auto;
+            padding-top:12px;
+            color:var(--muted);
+            font-weight:700;
+            font-size:.75rem;
+          ">
+              Infrastructure Lab Project
+            </small>
+
+          </div>
+
+        </article>
+
+        <article class="other-project-card" style="
+        display:grid;
+        grid-template-columns:38% 62%;
+        height:280px;
+        overflow:hidden;
+        background:#fff;
+        border:1px solid var(--line);
+        border-radius:22px;
+        box-shadow:0 12px 34px rgba(20,40,80,.06);
+      ">
+
+          <div class="other-project-image" style="
+          width:100%;
+          height:280px;
+          display:flex;
+          align-items:center;
+          justify-content:center;
+          overflow:hidden;
+          background:#f4f7fc;
+        ">
+
+            <img src="assets/ds.png" alt="Tabungan SMK" style="
+            display:block;
+            width:100%;
+            height:100%;
+            object-fit:contain;
+          ">
+
+          </div>
+
+
+          <div style="
+          padding:26px 30px;
+          display:flex;
+          flex-direction:column;
+          min-width:0;
+          overflow:hidden;
+        ">
+
+            <b style="
+            color:var(--blue);
+            font-size:.68rem;
+            letter-spacing:.1em;
+          ">
+              06 / DESKTOP APPLICATION
+            </b>
+
+
+            <h3 class="other-project-title" style="
+            margin:10px 0 12px;
+            color:var(--navy);
+            font-size:1.35rem;
+          ">
+              Tabungan SMK
+            </h3>
+
+
+            <p style="
+            margin:0;
+            color:var(--muted);
+            font-size:.82rem;
+            line-height:1.65;
+          ">
+              Merancang aplikasi desktop untuk membantu pencatatan
+              tabungan siswa. Aplikasi menangani data pengguna,
+              transaksi setoran dan penarikan, pengecekan saldo,
+              serta pencatatan riwayat transaksi tabungan.
+            </p>
+
+
+            <div style="
+            display:flex;
+            flex-wrap:wrap;
+            gap:7px;
+            margin-top:14px;
+          ">
+
+              <span class="other-project-tag" style="
+              padding:6px 10px;
+              border-radius:999px;
+              background:#eaf0ff;
+              color:var(--blue);
+              font-size:.68rem;
+              font-weight:800;
+            ">
+                Desktop
+              </span>
+
+
+              <span class="other-project-tag" style="
+              padding:6px 10px;
+              border-radius:999px;
+              background:#eaf0ff;
+              color:var(--blue);
+              font-size:.68rem;
+              font-weight:800;
+            ">
+                Database
+              </span>
+
+            </div>
+
+
+            <small style="
+            margin-top:auto;
+            padding-top:12px;
+            color:var(--muted);
+            font-weight:700;
+            font-size:.75rem;
+          ">
+              Desktop Application Project
+            </small>
+
+          </div>
+
+        </article>
+
       </div>
+
+    </section>
+    <section class="skills section" id="skills">
+
+      <p class="eyebrow">10 / SKILLS</p>
+
+      <div class="skills-layout">
+
+        <div class="skills-copy">
+
+          <h2 style="color: white;">
+            Berpikir<br>
+            dalam alur,<br>
+            <span>membangun<br>dengan kode.</span>
+          </h2>
+
+          <p style="color: white;">
+            Dari memahami kebutuhan, merancang sistem,
+            membangun solusi, hingga memastikan implementasinya
+            berjalan sesuai harapan.
+          </p>
+
+        </div>
+
+
+        <div class="skills-visual">
+
+          <div class="skill-core">
+            AN
+            <small>Technical toolkit</small>
+          </div>
+
+
+          <!-- 01 -->
+          <article>
+            <b>01</b>
+
+            <h3>System Analysis</h3>
+
+            <p>
+              Requirements Analysis · BPMN · UML · ERD
+            </p>
+          </article>
+
+
+          <!-- 02 -->
+          <article>
+            <b>02</b>
+
+            <h3>Backend Development</h3>
+
+            <p>
+              Laravel · Express.js · Python · REST API
+            </p>
+          </article>
+
+
+          <!-- 03 -->
+          <article>
+            <b>03</b>
+
+            <h3>Database &amp; Integration</h3>
+
+            <p>
+              MySQL · Cloud SQL · API Integration · Webhook
+            </p>
+          </article>
+
+
+          <!-- 04 -->
+          <article>
+            <b>04</b>
+
+            <h3>Cloud &amp; DevOps</h3>
+
+            <p>
+              Google Cloud · Cloud Run · Deployment · Monitoring
+            </p>
+          </article>
+
+
+          <!-- 05 -->
+          <article>
+            <b>05</b>
+
+            <h3>Software Quality</h3>
+
+            <p>
+              Functional Testing · API Testing · Test Cases · Debugging
+            </p>
+          </article>
+
+
+          <!-- 06 -->
+          <article>
+            <b>06</b>
+
+            <h3>Tools &amp; Workflow</h3>
+
+            <p>
+              Git · GitHub · Swagger · Visual Paradigm
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+
     </section>
 
     <section class="community section grid-bg" id="community">
@@ -310,91 +1731,118 @@
         <p>Pengalaman mengelola program organisasi dan berkoordinasi langsung di balik panggung.</p>
       </div>
       <div class="organization-grid">
+
         <article>
-          <div><b>01 / ORGANIZATION</b><time>2023 — 2024</time></div>
+          <div>
+            <b>01 / ORGANIZATION</b>
+            <time>2023 — 2024</time>
+          </div>
+
           <h3>Divisi Internal HIMATIF</h3>
           <h4>Himpunan Mahasiswa Teknik Informatika</h4>
-          <p>Terlibat dalam pengaderan lebih dari 100 mahasiswa baru, menginisiasi Magang Himpunan untuk lebih dari 20
-            mahasiswa, serta berkontribusi dalam MABIM, Makrab, SOSFAK, LDKO, POSTIKA, INFOSIL, dan COMITS.</p>
+
+          <p>
+            Terlibat dalam program pengembangan internal organisasi dan kegiatan kemahasiswaan.
+            Berkontribusi dalam proses pengaderan lebih dari 100 mahasiswa baru, menginisiasi
+            program Magang Himpunan yang memberikan pengalaman berorganisasi bagi lebih dari
+            20 mahasiswa, serta terlibat dalam pelaksanaan berbagai kegiatan seperti MABIM,
+            Makrab, SOSFAK, LDKO, POSTIKA, INFOSIL, dan COMITS. Selain itu, turut membantu
+            koordinasi kegiatan, pembagian tugas, serta persiapan kebutuhan acara.
+          </p>
         </article>
+
+
         <article>
-          <div><b>02 / ORGANIZATION</b><time>2025 — 2026</time></div>
+          <div>
+            <b>02 / ORGANIZATION</b>
+            <time>2025 — 2026</time>
+          </div>
+
           <h3>Divisi PSDM</h3>
           <h4>BEM Fakultas Teknik</h4>
-          <p>Berpartisipasi dalam program pengembangan sumber daya mahasiswa serta dipercaya memimpin pelaksanaan
-            Seminar Teknik.</p>
-        </article>
-      </div>
-      <div class="event-grid"><button class="event-card"
-          data-gallery="assets/infosil-cover.jpeg,assets/infosil-team.jpeg"><img src="assets/infosil-cover.jpeg"
-            alt="Infosil Fest"><span><b>MEI 2026</b><strong>Infosil Fest</strong><small>Assistant Stage
-              Manager</small><em>Lihat detail &amp; galeri ↗</em></span></button><button class="event-card"
-          data-gallery="assets/comits-cover.jpeg"><img src="assets/comits-cover.jpeg"
-            alt="Grand Closing COMITS"><span><b>OKTOBER 2024</b><strong>Grand Closing COMITS</strong><small>Stage
-              Manager · Dies Natalis HIMATIF</small><em>Lihat detail &amp; galeri ↗</em></span></button><button
-          class="event-card" data-gallery="assets/seminar-mindset.jpeg"><img src="assets/seminar-mindset.jpeg"
-            alt="Seminar The Power of Mindset"><span><b>DESEMBER 2025</b><strong>The Power of
-              Mindset</strong><small>Ketua Pelaksana · BEM FT UNSUR</small><em>Lihat detail &amp; galeri
-              ↗</em></span></button></div>
-    </section>
 
-    <section class="skills section grid-bg" id="skills">
-      <p class="eyebrow">10 / SKILLS</p>
-      <div class="skills-layout">
-        <div class="skills-copy">
-          <h2>Berpikir<br>dalam alur,<br><span>membangun<br>dengan kode.</span></h2>
-          <p>Dari memahami kebutuhan sampai memastikan solusi bekerja sesuai harapan.</p>
-        </div>
-        <div class="skills-visual">
-          <div class="skill-core">AN<small>Technical toolkit</small></div>
-          <article><b>01</b>
-            <h3>System Analysis</h3>
-            <p>Requirements · BPMN · UML · ERD</p>
-          </article>
-          <article><b>02</b>
-            <h3>Development</h3>
-            <p>Laravel · Express.js · Python · REST API</p>
-          </article>
-          <article><b>03</b>
-            <h3>Cloud &amp; Data</h3>
-            <p>MySQL · Google Cloud · Cloud Run</p>
-          </article>
-          <article><b>04</b>
-            <h3>Quality</h3>
-            <p>Functional · API Testing · Debugging</p>
-          </article>
-          <article class="skill-last"><b>05</b>
-            <h3>Tools</h3>
-            <p>Git · GitHub · Visual Paradigm · Swagger</p>
-          </article>
-        </div>
-      </div>
-    </section>
+          <p>
+            Berpartisipasi dalam program Pengembangan Sumber Daya Mahasiswa yang berfokus pada
+            pengembangan potensi, keterlibatan, dan kapasitas mahasiswa Fakultas Teknik.
+            Berkontribusi dalam perencanaan serta pelaksanaan berbagai kegiatan kemahasiswaan
+            dan dipercaya menjadi Project Chair pada Seminar Teknik. Dalam pelaksanaannya,
+            turut mengoordinasikan panitia, menyiapkan kebutuhan kegiatan, membagi tugas, serta
+            memastikan rangkaian acara berjalan sesuai perencanaan.
+          </p>
+        </article>
 
-    <section class="achievements section" id="achievements">
-      <div class="achievement-head">
-        <p class="eyebrow">11 / ACHIEVEMENTS</p><span>4 pencapaian · 1 publikasi</span>
       </div>
-      <div class="certificate-grid"><button data-single="assets/lida.png"><img src="assets/lida.png"
-            alt="Sertifikat Lomba Inovasi Daerah"><span><b>01</b><strong>Juara 1 Lomba
-              Inovasi Daerah Kabupaten Cianjur 2025</strong></span></button><button
-          data-single="assets/pilmapres.jpeg"><img src="assets/pilmapres.jpeg"
-            alt="Sertifikat Mahasiswa Berprestasi"><span><b>02</b><strong>Juara 2 Mahasiswa Berprestasi Universitas
-              Suryakancana 2025</strong></span></button></div>
-      <div class="achievement-grid">
-        <article class="featured"><b>01</b>
-          <h3>Juara 1 Lomba Inovasi Daerah Kabupaten Cianjur 2025</h3>
+      <br><br>
+      <div class="event-grid">
+
+        <!-- INFOSIL FEST -->
+        <article class="event-card">
+
+          <img src="assets/infosil-cover.jpeg" alt="Infosil Fest">
+
+          <span>
+            <b>MEI 2026</b>
+
+            <strong>Infosil Fest</strong>
+
+            <small>Assistant Stage Manager</small>
+
+            <p>
+              Berkontribusi dalam pelaksanaan Infosil Fest sebagai Assistant Stage Manager
+              dengan membantu mengatur alur acara di area panggung, berkoordinasi dengan
+              pengisi acara dan tim terkait, serta memastikan setiap sesi berjalan sesuai
+              rundown yang telah disusun.
+            </p>
+          </span>
+
         </article>
-        <article><b>02</b>
-          <h3>Juara 2 Mahasiswa Berprestasi Universitas Suryakancana 2025</h3>
+
+
+        <!-- GRAND CLOSING COMITS -->
+        <article class="event-card">
+
+          <img src="assets/comits-cover.jpeg" alt="Grand Closing COMITS">
+
+          <span>
+            <b>OKTOBER 2024</b>
+
+            <strong>Grand Closing COMITS</strong>
+
+            <small>Stage Manager · Dies Natalis HIMATIF</small>
+
+            <p>
+              Bertanggung jawab sebagai Stage Manager pada Grand Closing COMITS dalam
+              rangka Dies Natalis HIMATIF. Mengatur jalannya kegiatan di area panggung,
+              mengoordinasikan pergantian sesi dan penampilan, serta memastikan rangkaian
+              acara berjalan sesuai rundown.
+            </p>
+          </span>
+
         </article>
-        <article><b>03</b>
-          <h3>Juara 1 Mahasiswa Berprestasi Fakultas Teknik 2025</h3>
+
+
+        <!-- THE POWER OF MINDSET -->
+        <article class="event-card">
+
+          <img src="assets/seminar-mindset.jpeg" alt="Seminar The Power of Mindset">
+
+          <span>
+            <b>DESEMBER 2025</b>
+
+            <strong>The Power of Mindset</strong>
+
+            <small>Ketua Pelaksana · BEM FT UNSUR</small>
+
+            <p>
+              Memimpin pelaksanaan seminar teknik “The Power of Mindset” sebagai Ketua
+              Pelaksana. Mengoordinasikan panitia, membagi tugas antar divisi, memantau
+              persiapan kegiatan, serta memastikan kebutuhan dan rangkaian acara dapat
+              terlaksana sesuai perencanaan.
+            </p>
+          </span>
+
         </article>
-        <article><b>04</b>
-          <h3>Publikasi Media Jurnal Informatika · 2025</h3><a href="https://doi.org/10.35194/mji.v17i2.5893"
-            target="_blank" rel="noreferrer">Lihat publikasi ↗</a>
-        </article>
+
       </div>
     </section>
 
